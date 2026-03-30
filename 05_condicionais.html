@@ -1,0 +1,55 @@
+
+<!--If-->
+<p>Estoque</p>
+
+<script>
+    let estoque=107;
+    if(estoque >= 100){
+        document.write("O estoque está cheio com ", estoque, " itens");
+    }
+</script>
+
+
+<!--If e Else-->
+<p>Nota de matemática</p>
+<script>
+    let nota_matematica = 8;
+
+    if (nota_matematica >= 7){
+        document.write("Parabéns você foi aprovado");
+    } else {
+        document.write("Você foi reprovado");
+    }
+
+
+  
+</script>
+
+<p>Nota de quimica</p>
+<script>
+        let nota_quimica = 5;
+         if (nota_quimica >= 7){
+        document.write("Parabéns você foi aprovado");
+    } else {
+       document.write("Você foi reprovado");
+    }
+</script>
+
+<!--Switch-->
+<p>Auxilio da familia</p>
+<script>
+    let dependentes = 3;
+    let auxilio;
+
+    if (dependentes >= 1 && dependentes <= 2) {
+        auxilio = 100;
+    } else if (dependentes >= 3 && dependentes <= 4) {
+        auxilio = 200;
+    } else if (dependentes > 4) {
+        auxilio = 300;
+    } else {
+        auxilio = 0; 
+    }
+
+    document.write("Valor do auxílio: R$ ", auxilio);
+</script>
