@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h2>Função sem parâmetro</h2>
+    <script>
+        function mostrarnumero(){
+            let numero = 20; // usa um número fixo
+            document.write("Número: ", numero);
+        }
+
+        mostrarnumero(); 
+    </script>
+
+    <h2>Função com parâmetro</h2>
+    <script>
+        function multiplicacao(numero){
+            document.write("Dobro: ", numero *2); //não recebeu o valor ainda
+        }
+
+        multiplicacao(8); //enviamos o valor 8 para dentro da função;
+    </script>
+
+    <h2>Função que retorna valor</h2>
+    <script>
+        function soma(a,b){
+            return a + b; // aqui colocamos o que vai ter que retornar
+        }
+
+        let resultado = soma (6,9); //e aqui fora os valores
+
+        document.write(resultado);
+    </script>
+</body>
+</html>

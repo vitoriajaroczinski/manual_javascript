@@ -19,6 +19,9 @@ Pode ser usado dentro do próprio arquivo HTML ou ligado a um arquivo externo qu
 Qual a diferença entre script dentro do HTML e script em arquivo separado?
 O script dentro do HTML fica no mesmo arquivo da página, enquanto o script externo fica em um arquivo separado, facilitando organização e reutilização.
 
+Exemplo do JavaScript em HTML no arquivo "01_script_no_html.html".
+O exemplo do arquivo externo está em "02_script_externo.js", mas está conectado a um arquivo HTML nomeado de "02_script_externo.html".
+
 
 3. VARIÁVEIS, TIPOS E ESCOPO
 
@@ -45,6 +48,8 @@ Ocorre quando uma variável é declarada dentro de uma função e só pode ser u
 
 O que é escopo de bloco
 Ocorre quando uma variável é declarada dentro de um bloco de código (como if, for, while), sendo acessível apenas dentro daquele bloco.
+
+O exemplo desse topico pode ser encontrado no arquivo "03_variaveis_tipos_escopo.html". 
 
 4. OPERADORES, COMPARAÇÕES E LÓGICA
 
@@ -77,12 +82,14 @@ São usados para combinar ou inverter condições.
  NÃO lógico (!) → inverte o valor (true vira false e vice-versa)
 
 Qual a diferença entre == e ===?
- == compara apenas o valor, enquanto === compara valor e tipo ao mesmo tempo.
+ == compara apenas o valor e o converte, enquanto === compara valor e tipo ao mesmo tempo apenas vendo se um é igual ao outro, se não for automaticamente é falso, o que o torna bem mais seguro, por não tranformar valores diferentes em iguais.
+
+Exemplo: Quando usamos ==, estamos comparando apenas o valor, como verificar se o número 5 é igual ao valor '5'. Já o === compara se o número 5 é igual ao valor '5' e também se os tipos são iguais, ou seja, número e texto. Esse exemplo pode ser encontrado no arquivo "04_operadores_e_comparacoes.html".
 
 Qual a diferença entre != e !==?
  != verifica se os valores são diferentes, enquanto !== verifica se são diferentes em valor e tipo.
 
-
+Exemplo: Aqui se aplica a mesma regra do == ou ===, para != o tipo não interfere e para !== o tipo interfere. Esse exemplo pode ser encontrado no arquivo "04_operadores_e_comparacoes.html".
 
 5. ESTRUTURAS CONDICIONAIS: 
 
@@ -107,6 +114,8 @@ Exemplo no arquivo "condicionais.html": Uma família vai receber um auxílio pro
 FOR: O for é uma estrutura de repetição usada quando você já sabe quantas vezes quer repetir uma ação. Ele funciona com três partes: início, condição e incremento.
 
 WHILE:  É uma estrutura de repetição usada quando você não sabe exatamente quantas vezes o código vai repetir, pois depende de uma condição.
+
+O exemplo está no arquivo "06_repeticao.html". E para ambos os casos utilizamos um contador que aumenta o valor de um em um.
 
 
 7. FUNÇÕES:
@@ -134,6 +143,8 @@ Parâmetros são informações que você passa para a função para ela usar.
 Função com retorno:
 
 Uma função pode retornar um valor usando a palavra return. Isso permite guardar ou usar o resultado em outro lugar do código.
+
+Os exemplos básicos de funções estão no arquivo "07_funcoes.html". Neles contém multiplicação e soma utilizando funções.
 
 
 8. MANIPULAÇÃO DE PÁGINA COM JAVASCRIPT

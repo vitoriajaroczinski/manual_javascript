@@ -1,9 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <!--If-->
 
-<!--If-->
-<p>Estoque</p>
+<h2>Estoque (IF)</h2>
 
 <script>
-    let estoque=107;
+    let estoque = Number(prompt("Digite a quantidade de itens no estoque:"));
     if(estoque >= 100){
         document.write("O estoque está cheio com ", estoque, " itens");
     }
@@ -11,9 +19,10 @@
 
 
 <!--If e Else-->
-<p>Nota de matemática</p>
+
+<h2>Nota de matemática (IF e Else)</h2>
 <script>
-    let nota_matematica = 8;
+    let nota_matematica = Number(prompt("Digite sua nota de matemática:"));
 
     if (nota_matematica >= 7){
         document.write("Parabéns você foi aprovado");
@@ -25,20 +34,11 @@
   
 </script>
 
-<p>Nota de quimica</p>
-<script>
-        let nota_quimica = 5;
-         if (nota_quimica >= 7){
-        document.write("Parabéns você foi aprovado");
-    } else {
-       document.write("Você foi reprovado");
-    }
-</script>
-
 <!--Switch-->
-<p>Auxilio da familia</p>
+
+<h2>Auxilio da familia (Switch)</h2>
 <script>
-    let dependentes = 3;
+    let dependentes = Number(prompt("Digite a quantidade de dependentes:"));
     let auxilio;
 
     if (dependentes >= 1 && dependentes <= 2) {
@@ -53,3 +53,5 @@
 
     document.write("Valor do auxílio: R$ ", auxilio);
 </script>
+</body>
+</html>

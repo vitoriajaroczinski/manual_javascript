@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+</head>
+<body>
+    <!--Var: Maneira mais antiga e não recomendada-->
+    <h2>Var</h2>
+    <script>
+        var nome = "Alice";
+        document.write(nome);
+    </script>
+
+    <!--Let: Nos permiter mudar o valor da variavel ao decorrer do código-->
+    <h2>Let</h2>
+    <script>
+        let nome_2 = "Vitória";
+        document.write(nome_2);
+    </script>
+
+    <!--Const: Não pode mudar o valor da variavel durante o código-->
+    <h2>Const</h2>
+    <script>
+        const idade = 16;
+        document.write(idade, " anos"); //essa variavel não pode ser alterada nas proximas linhas
+    </script>
+
+    <h2>Escopo global</h2>
+    <!--Pode ser acessada em qualquer parte do código-->
+    <script>
+        let nome_3 = "Vitória";
+
+        document.write(nome_3); //funciona
+
+        function mostrar(){
+           document.write(nome_3); //funciona
+        }
+
+        mostrar();
+    </script>
+
+    <h2>Escopo de função</h2>
+    <!--Como vai ser declarada em uma função, não vai poder ser usada fora-->
+    <script>
+        function teste(){
+            let ano = 2026;
+            document.write(ano); //aqui funciona
+        }
+
+        teste();
+
+        document.write(ano); //aqui não
+    </script>
+
+    <h2>Escopo de bloco</h2>
+    <!--Usada dentro de um bloco como por exemplo o if-->
+    <script>
+        let numero = 10;
+
+        if (numero >= 10){
+            let mensagem = "Numero maior ou igual a 10";
+            document.write(mensagem); //funciona
+        }
+
+        document.write(mensagem); //aqui essa mensagem não existe porque essa variavel só existe dentro do bloco
+    </script>
+</body>
+</html>
