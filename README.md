@@ -1,6 +1,6 @@
 # manual_javascript
 
-### 1. introdução:
+1. introdução:
 
 O que é JavaScript?
 linguagem de programação usada para criar interatividade em páginas da web, permitindo que elas façam mais do que apenas mostrar conteúdo estático.
@@ -194,10 +194,13 @@ Remove um elemento da página.
 
 referências:
 
-https://www.alura.com.br/artigos/javascript 
-https://web.dev/articles/global-and-local-scope?hl=pt-br
-https://www.freecodecamp.org/portuguese/news/instrucoes-if-else-em-c-explicadas/
-https://www.dio.me/articles/funcoes-na-programacao-o-que-sao-e-como-cria-las-de-forma-eficiente-f3ed466dbbab 
+LIMA, Guilherme. JavaScript: o que é, para que serve e como aprender. Alura, 2023. Disponível em: https://www.alura.com.br/artigos/javascript. Acesso em: 31 mar. 2026.
+
+WEB.DEV. Escopo global e local. [S. l.]: web.dev, 2020. Disponível em: https://web.dev/articles/global-and-local-scope?hl=pt-br. Acesso em: 31 mar. 2026.
+
+BENNADJI, Ziad. Instruções if else em C explicadas. freeCodeCamp, 2022. Disponível em: https://www.freecodecamp.org/portuguese/news/instrucoes-if-else-em-c-explicadas/. Acesso em: 31 mar. 2026.
+
+ELIAS, Otoniel. Funções na programação: o que são e como criá-las de forma eficiente. DIO, 2023. Disponível em: https://www.dio.me/articles/funcoes-na-programacao-o-que-sao-e-como-cria-las-de-forma-eficiente-f3ed466dbbab. Acesso em: 31 mar. 2026.
 
 
 
