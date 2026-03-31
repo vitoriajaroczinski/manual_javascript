@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <section>
+         <h2>Document e getElementById</h2>
+    <p id="texto"></p> <!--O id identificou para o getElementById poder localizar-->
+    <script>
+        document.getElementById("texto").textContent = "Oiiii"; //document escreve na página
+    </script>
+    </section>
+   
+
+    <section>
+        <h2>querySelection</h2>
+    <p class="caixa">Texto</p> <!--Nos permite usar classe-->
+
+    <script>
+        document.querySelector(".caixa").textContent = "querySelection é flexivel"
+    </script>
+    </section>
+    
+    <section>
+ <h2>Value</h2>
+
+    <input id="nome" placeholder="Digite o seu nome">
+    <button id="botao">Mostrar</button>
+    
+   
+
+    <script>
+
+        let botao = document.getElementById("botao");
+        botao.addEventListener("click", function(){
+            document.getElementById("resultado").textContent= document.getElementById("nome").value;
+        })
+    </script>
+
+    <p id="resultado"></p>
+
+    </section>
+        
+    <section>
+        <h2>Checked</h2>
+        <input type="checkbox" id="check">
+        <button onclick="ver()">Ver</button>
+
+        <script>
+            function ver(){
+                alert(document.getElementById("check").checked);
+            }
+        </script>
+    </section>
+       
+    <section>
+        <h2>textContent</h2>
+
+        <p id="text"></p>
+
+        <script>
+            document.getElementById("text").textContent = "Bom dia!"; //Já tinhamos usados o .textContent em outros exemplos
+        </script>
+    </section>
+
+       <section>
+        <h2>Style</h2>
+
+        <p id="cor">Teste</p>
+        <script>
+            document.getElementById("cor").style.color = "blue";
+        </script>
+       </section>    
+
+       <section>
+        <h2>classList</h2>
+        <p id="p">Exemplo</p>
+
+        <Script>
+            document.getElementById("p").classList.add("class_add"); //adicionou classe
+        </Script>
+       </section>
+
+       <section>
+        <h2>addEventListener()</h2>
+        <button id="botao">Não clique</button>
+
+        <script>
+            document.getElementById("botao").addEventListener("click", function(){
+                alert("Você clicou");
+            });
+        </script>
+
+       </section>
+
+       <section>
+        <h2>querySelectorAll()</h2>
+        <p class="item">1</p>
+        <p class="item">2</p>
+
+        <script>
+            let itens = document.querySelectorAll(".item");
+            console.log(itens);
+        </script>
+       </section>
+
+       <section>
+        <h2>checkValidity</h2>
+        <input type="email" id="email">
+        <button onclick="ver()">Ver</button>
+
+        <script>
+            function ver(){
+                alert(document.getElementById("email").checkValidity());
+            }
+        </script>
+       </section>
+
+       <section>
+        <h2>DOMContentLoaded</h2>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                alert("Carregou"); //quando atualizar a página vai aparecer essa mensagem
+            })
+        </script>
+       </section>
+
+       
+
+</body>
+</html>
